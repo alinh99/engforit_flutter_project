@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_eft_final/Screens/Home/home_screen.dart';
-import 'package:flutter_eft_final/Screens/Login/components/background.dart';
+import 'package:flutter_eft_final/Screens/Signin/components/background.dart';
 import 'package:flutter_eft_final/Screens/Signup/signup_screen.dart';
 import 'package:flutter_eft_final/components/already_have_an_account_acheck.dart';
 import 'package:flutter_eft_final/components/rounded_button.dart';

@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_eft_final/Screens/Welcome/welcome_screen.dart';
-
 import 'package:flutter_eft_final/constants.dart';
 import 'package:flutter_eft_final/Screens/Home/home_screen.dart';
 import 'package:flutter_eft_final/Screens/home_detail/details_screen.dart';
-import 'package:flutter_eft_final/Screens/Login/signin_screen.dart';
+import 'package:flutter_eft_final/Screens/Signin/signin_screen.dart';
 import 'package:flutter_eft_final/Screens/Signup/signup_screen.dart';
-import 'package:flutter_eft_final/Screens/Welcome/welcome_screen.dart';
-
-
-
 
 void main() => runApp(MyApp());
 
@@ -32,7 +27,6 @@ class MyApp extends StatelessWidget {
         HomeScreen.id: (context) => HomeScreen(),
         DetailsScreen.id: (context) => DetailsScreen(),
       },
-
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_eft_final/Screens/Login/components/body.dart';
+import 'package:flutter_eft_final/Screens/Signin/components/body.dart';
 
 class SignInScreen extends StatelessWidget {
   static const String id = "login_screen";
