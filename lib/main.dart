@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_eft_final/Screens/loading_screen.dart';
+import 'package:flutter_eft_final/Screens/Welcome/welcome_screen.dart';
+
 import 'package:flutter_eft_final/constants.dart';
 import 'package:flutter_eft_final/Screens/Home/home_screen.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Cairo",
         textTheme: Theme.of(context).textTheme.apply(displayColor: kTextColor),
       ),
-      home: LoadingScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

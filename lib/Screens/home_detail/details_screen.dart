@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:flutter_eft_final/constants.dart';
 import 'package:flutter_eft_final/components/bottom_nav_bar.dart';
-import 'package:flutter_eft_final/Screens/Home/components/body.dart';
+import 'package:flutter_eft_final/Screens/home_detail/components/body.dart';
 
-class HomeScreen extends StatelessWidget {
+class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context)
-        .size; //this gonna give us total height and with of our device
     return Scaffold(
       bottomNavigationBar: BottomNavBar(),
       body: Body(),
     );
   }
 }
+
