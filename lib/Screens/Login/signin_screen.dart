@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_eft_final/Screens/Login/components/body.dart';
 
-class LoginScreen extends StatelessWidget {
-  static const id = "LoginScreen";
+class SignInScreen extends StatelessWidget {
+  static const String id = "login_screen";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

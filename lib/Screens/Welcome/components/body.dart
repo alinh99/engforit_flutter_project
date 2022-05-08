@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_eft_final/Screens/Login/login_screen.dart';
+import 'package:flutter_eft_final/Screens/Login/signin_screen.dart';
 import 'package:flutter_eft_final/Screens/Signup/signup_screen.dart';
 import 'package:flutter_eft_final/Screens/Welcome/components/background.dart';
 import 'package:flutter_eft_final/components/rounded_button.dart';
@@ -45,7 +45,7 @@ class _BodyState extends State<Body> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return LoginScreen();
+                      return SignInScreen();
                     },
                   ),
                 );
