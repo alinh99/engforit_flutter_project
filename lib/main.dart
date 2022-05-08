@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_eft_final/Screens/Welcome/welcome_screen.dart';
 import 'package:flutter_eft_final/constants.dart';
 import 'package:flutter_eft_final/Screens/Home/home_screen.dart';
-import 'package:flutter_eft_final/Screens/home_detail/details_screen.dart';
+import 'package:flutter_eft_final/Screens/Home_detail/details_screen.dart';
 import 'package:flutter_eft_final/Screens/Signin/signin_screen.dart';
 import 'package:flutter_eft_final/Screens/Signup/signup_screen.dart';
-
-void main() => runApp(MyApp());
+import 'package:firebase_core/firebase_core.dart';
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

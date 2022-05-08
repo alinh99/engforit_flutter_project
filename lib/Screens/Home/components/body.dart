@@ -5,9 +5,35 @@ import 'package:flutter_eft_final/Screens/home_detail/details_screen.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_eft_final/constants.dart';
 import 'background.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
   const Body({Key key}) : super(key: key);
+
+  @override
+  _BodyState createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  final _auth = FirebaseAuth.instance;
+  User loggedInUser;
+  @override
+  void initState() {
+    super.initState();
+    getCurrentUser();
+  }
+
+  void getCurrentUser() async {
+    try {
+      final user = await _auth.currentUser;
+      if (user != null) {
+        loggedInUser = user;
+        print(loggedInUser.email);
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

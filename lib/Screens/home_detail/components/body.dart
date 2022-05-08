@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_eft_final/Screens/home_detail/details_screen.dart';
 import 'package:flutter_eft_final/components/search_bar.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_eft_final/constants.dart';
