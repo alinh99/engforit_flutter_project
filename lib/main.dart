@@ -6,13 +6,14 @@ import 'package:flutter_eft_final/Screens/Home_detail/details_screen.dart';
 import 'package:flutter_eft_final/Screens/Signin/signin_screen.dart';
 import 'package:flutter_eft_final/Screens/Signup/signup_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(EFTApp());
 }
 
-class MyApp extends StatelessWidget {
+class EFTApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {

@@ -18,6 +18,7 @@ class _BodyState extends State<Body> {
   @override
   void initState() {
     super.initState();
+    
     getCurrentUser();
   }
 
@@ -71,29 +72,24 @@ class _BodyState extends State<Body> {
                   mainAxisSpacing: 20,
                   children: <Widget>[
                     CategoryCard(
-                      title: "Diet Recommendation",
+                      title: "Listening",
                       svgSrc: "assets/icons/Hamburger.svg",
                       press: () {},
                     ),
                     CategoryCard(
-                      title: "Kegel Exercises",
+                      title: "Speaking",
                       svgSrc: "assets/icons/Excrecises.svg",
                       press: () {},
                     ),
                     CategoryCard(
-                      title: "Meditation",
+                      title: "Reading",
                       svgSrc: "assets/icons/Meditation.svg",
                       press: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) {
-                            return DetailsScreen();
-                          }),
-                        );
+                        Navigator.pushNamed(context, DetailsScreen.id);
                       },
                     ),
                     CategoryCard(
-                      title: "Yoga",
+                      title: "Writing",
                       svgSrc: "assets/icons/yoga.svg",
                       press: () {},
                     ),
