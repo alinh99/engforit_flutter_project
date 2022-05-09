@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_eft_final/components/category_card.dart';
 import 'package:flutter_eft_final/components/search_bar.dart';
@@ -18,7 +19,7 @@ class _BodyState extends State<Body> {
   @override
   void initState() {
     super.initState();
-    
+
     getCurrentUser();
   }
 
@@ -73,24 +74,24 @@ class _BodyState extends State<Body> {
                   children: <Widget>[
                     CategoryCard(
                       title: "Listening",
-                      svgSrc: "assets/icons/Hamburger.svg",
+                      icon: CupertinoIcons.headphones,
                       press: () {},
                     ),
                     CategoryCard(
                       title: "Speaking",
-                      svgSrc: "assets/icons/Excrecises.svg",
+                      icon: CupertinoIcons.mic,
                       press: () {},
                     ),
                     CategoryCard(
                       title: "Reading",
-                      svgSrc: "assets/icons/Meditation.svg",
+                      icon: CupertinoIcons.book,
                       press: () {
                         Navigator.pushNamed(context, DetailsScreen.id);
                       },
                     ),
                     CategoryCard(
                       title: "Writing",
-                      svgSrc: "assets/icons/yoga.svg",
+                      icon: CupertinoIcons.pencil,
                       press: () {},
                     ),
                   ],

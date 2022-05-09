@@ -1,5 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:flutter_eft_final/constants.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -13,17 +14,17 @@ class BottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           BottomNavItem(
-            title: "Today",
-            svgScr: "assets/icons/calendar.svg",
+            title: "All Skills",
+            icon: CupertinoIcons.home,
           ),
           BottomNavItem(
             title: "All Exercises",
-            svgScr: "assets/icons/gym.svg",
+            icon: CupertinoIcons.book,
             isActive: true,
           ),
           BottomNavItem(
             title: "Settings",
-            svgScr: "assets/icons/Settings.svg",
+            icon: CupertinoIcons.settings,
           ),
         ],
       ),
@@ -32,13 +33,13 @@ class BottomNavBar extends StatelessWidget {
 }
 
 class BottomNavItem extends StatelessWidget {
-  final String svgScr;
+  final IconData icon;
   final String title;
   final Function press;
   final bool isActive;
   const BottomNavItem({
     Key key,
-    this.svgScr,
+    this.icon,
     this.title,
     this.press,
     this.isActive = false,
@@ -51,8 +52,9 @@ class BottomNavItem extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          SvgPicture.asset(
-            svgScr,
+          Icon(
+            icon,
+            size: 35.0,
             color: isActive ? kPrimaryColor : kTextColor,
           ),
           Text(
