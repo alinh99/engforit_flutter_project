@@ -71,7 +71,7 @@ class _BodyState extends State<Body> {
                       Navigator.pushNamed(context, HomeScreen.id);
                     }
                     setState(() {
-                      showSpinner = true;
+                      showSpinner = false;
                     });
                   } catch (e) {
                     print(e);

@@ -56,7 +56,7 @@ class _BodyState extends State<Body> {
                 ),
               ),
               Text(
-                "Good Mornign \nShishir",
+                "Good Mornign \n",
                 style: Theme.of(context)
                     .textTheme
                     .displayMedium
