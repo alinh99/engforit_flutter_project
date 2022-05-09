@@ -44,18 +44,18 @@ class SeassionCard extends StatelessWidget {
                       height: 42,
                       width: 43,
                       decoration: BoxDecoration(
-                        color: isDone ? kPrimaryColor : Colors.white,
+                        color: isDone ? kBlueColor : Colors.white,
                         shape: BoxShape.circle,
                         border: Border.all(color: kBlueColor),
                       ),
                       child: Icon(
                         Icons.play_arrow,
-                        color: isDone ? Colors.white : kPrimaryColor,
+                        color: isDone ? Colors.white : kBlueColor,
                       ),
                     ),
                     SizedBox(width: 10),
                     Text(
-                      "Session $seassionNum",
+                      "Unit $seassionNum",
                       style: Theme.of(context).textTheme.subtitle1,
                     )
                   ],

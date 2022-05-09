@@ -16,11 +16,11 @@ class BottomNavBar extends StatelessWidget {
           BottomNavItem(
             title: "All Skills",
             icon: CupertinoIcons.home,
+            isActive: true,
           ),
           BottomNavItem(
             title: "All Exercises",
             icon: CupertinoIcons.book,
-            isActive: true,
           ),
           BottomNavItem(
             title: "Settings",
@@ -55,11 +55,11 @@ class BottomNavItem extends StatelessWidget {
           Icon(
             icon,
             size: 35.0,
-            color: isActive ? kPrimaryColor : kTextColor,
+            color: isActive ? kBlueColor : kTextColor,
           ),
           Text(
             title,
-            style: TextStyle(color: isActive ? kPrimaryColor : kTextColor),
+            style: TextStyle(color: isActive ? kBlueColor : kTextColor),
           ),
         ],
       ),
