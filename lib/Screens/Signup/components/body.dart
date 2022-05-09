@@ -13,8 +13,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 class Body extends StatefulWidget {
-  const Body({Key key}) : super(key: key);
-
   @override
   _BodyState createState() => _BodyState();
 }
@@ -98,15 +96,15 @@ class _BodyState extends State<Body> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  SocalIcon(
+                  SocialIcon(
                     iconSrc: "assets/icons/facebook.svg",
                     press: () {},
                   ),
-                  SocalIcon(
+                  SocialIcon(
                     iconSrc: "assets/icons/twitter.svg",
                     press: () {},
                   ),
-                  SocalIcon(
+                  SocialIcon(
                     iconSrc: "assets/icons/google-plus.svg",
                     press: () {},
                   ),

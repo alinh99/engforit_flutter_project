@@ -4,9 +4,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:flutter_eft_final/constants.dart';
 import 'package:flutter_eft_final/components/seassion_card.dart';
 
-class Body extends StatelessWidget {
-  const Body({Key key}) : super(key: key);
+class Body extends StatefulWidget {
+  @override
+  _BodyState createState() => _BodyState();
+}
 
+class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

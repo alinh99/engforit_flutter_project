@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_eft_final/constants.dart';
 
-class OrDivider extends StatelessWidget {
+Expanded buildDivider() {
+  return Expanded(
+    child: Divider(
+      color: Color(0xFFD9D9D9),
+      height: 1.5,
+    ),
+  );
+}
+
+class OrDivider extends StatefulWidget {
+  @override
+  _OrDividerState createState() => _OrDividerState();
+}
+
+class _OrDividerState extends State<OrDivider> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -23,15 +37,6 @@ class OrDivider extends StatelessWidget {
           ),
           buildDivider(),
         ],
-      ),
-    );
-  }
-
-  Expanded buildDivider() {
-    return Expanded(
-      child: Divider(
-        color: Color(0xFFD9D9D9),
-        height: 1.5,
       ),
     );
   }
