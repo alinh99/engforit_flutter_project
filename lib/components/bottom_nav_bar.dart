@@ -3,10 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_eft_final/constants.dart';
 
 class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(

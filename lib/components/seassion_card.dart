@@ -5,12 +5,11 @@ class SeassionCard extends StatelessWidget {
   final int seassionNum;
   final bool isDone;
   final Function press;
-  const SeassionCard({
-    Key key,
+  SeassionCard({
     this.seassionNum,
     this.isDone = false,
     this.press,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

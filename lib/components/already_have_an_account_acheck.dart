@@ -4,11 +4,10 @@ import 'package:flutter_eft_final/constants.dart';
 class AlreadyHaveAnAccountCheck extends StatelessWidget {
   final bool login;
   final Function press;
-  const AlreadyHaveAnAccountCheck({
-    Key key,
+  AlreadyHaveAnAccountCheck({
     this.login = true,
     this.press,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

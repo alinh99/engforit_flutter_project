@@ -3,10 +3,9 @@ import 'package:flutter_eft_final/constants.dart';
 
 class TextFieldContainer extends StatelessWidget {
   final Widget child;
-  const TextFieldContainer({
-    Key key,
+  TextFieldContainer({
     this.child,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

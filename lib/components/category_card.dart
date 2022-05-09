@@ -6,12 +6,12 @@ class CategoryCard extends StatelessWidget {
   final String svgSrc;
   final String title;
   final Function press;
-  const CategoryCard({
+  CategoryCard({
     Key key,
     this.svgSrc,
     this.title,
     this.press,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
